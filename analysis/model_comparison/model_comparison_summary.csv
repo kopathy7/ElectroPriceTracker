@@ -1,0 +1,28 @@
+Product,Model,MAE,RMSE,R2,MAPE%,DirAcc%
+HP ENVY,Linear Regression,0.0,0.0,1.0,0.0,100.0
+HP ENVY,Random Forest,2794.99,5004.77,0.83,3.46,58.62
+HP ENVY,XGBoost,5291.08,6704.93,0.69,6.24,86.21
+HP Victus,Linear Regression,0.0,0.0,1.0,0.0,100.0
+HP Victus,Random Forest,1143.49,2408.46,0.73,2.02,100.0
+HP Victus,XGBoost,1199.72,2421.55,0.73,2.11,100.0
+MacBook Air M2,Linear Regression,0.0,0.0,1.0,0.0,100.0
+MacBook Air M2,Random Forest,75.4,361.12,0.99,0.13,100.0
+MacBook Air M2,XGBoost,139.2,527.12,0.98,0.23,100.0
+HP OMEN,Linear Regression,0.0,0.0,1.0,0.0,100.0
+HP OMEN,Random Forest,292.67,534.43,0.99,0.24,96.3
+HP OMEN,XGBoost,635.62,2252.18,0.75,0.49,100.0
+OnePlus 12,Linear Regression,0.0,0.0,1.0,0.0,100.0
+OnePlus 12,Random Forest,700.39,1222.53,0.94,1.49,93.44
+OnePlus 12,XGBoost,548.12,936.76,0.96,1.15,73.77
+HP Pavilion,Linear Regression,0.0,0.0,1.0,0.0,100.0
+HP Pavilion,Random Forest,740.19,2404.84,0.74,1.41,90.57
+HP Pavilion,XGBoost,751.95,2495.04,0.72,1.44,92.45
+Samsung S24,Linear Regression,0.0,0.0,1.0,0.0,100.0
+Samsung S24,Random Forest,1711.41,2460.45,0.86,1.81,92.86
+Samsung S24,XGBoost,2193.94,3043.84,0.78,2.28,91.07
+Samsung S24 FE,Linear Regression,0.0,0.0,1.0,0.0,100.0
+Samsung S24 FE,Random Forest,898.45,1084.23,0.93,2.18,91.23
+Samsung S24 FE,XGBoost,1069.76,1299.71,0.89,2.66,80.7
+Samsung A55,Linear Regression,0.0,0.0,1.0,0.0,100.0
+Samsung A55,Random Forest,214.17,229.64,0.72,0.88,72.73
+Samsung A55,XGBoost,248.35,403.98,0.12,1.01,81.82
