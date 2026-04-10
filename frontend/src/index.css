@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-gray-200 font-grotesk antialiased;
+  }
+}
+
+/* Custom Scrollbar for ticker etc */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2e42;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00d4ff;
+}
+
+.ticker-wrap {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.ticker {
+  display: inline-block;
+  white-space: nowrap;
+  animation: ticker 40s linear infinite;
+}
+
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-bob {
+  animation: bob 2s ease-in-out infinite;
+}
