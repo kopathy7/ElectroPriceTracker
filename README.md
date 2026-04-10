@@ -50,6 +50,21 @@ ElectroPriceTracker/
 └── build_history.py      # Aggregates scattered CSVs -> history.json
 ```
 
+## 🧠 Machine Learning Architecture
+
+ElectroPriceTracker goes beyond simple data visualization by utilizing advanced ensemble machine learning models to forecast short-term optimal price drops. 
+
+### Core Models
+- **Random Forest Regression** & **XGBoost:** The predictive engine leverages tree-based ensemble methods to capture non-linear relationships in market pricing, handling high-variance spikes (like temporary reseller premiums) and correctly identifying genuine baseline drops.
+- **Model Storage:** Trained models are serialized as `.pkl` objects (e.g., `model.pkl`, `scaler.pkl`) inside the `/models/` directory for high-speed inference without requiring retraining.
+
+### Feature Engineering
+The models do not simply look at raw prices; they are trained on multiple engineered timeseries features:
+1. **Moving Averages (MA_7, MA_14):** Smoothing out noise to find medium-term market direction.
+2. **Volatility Index & Momentum:** Capturing the standard deviations of recent price drops.
+3. **Temporal Markers:** `day_of_week`, `week_of_year`, and `month` parameters to map seasonal spikes logically (e.g., Diwali or Navratri sale impacts).
+4. **Price Lag Features:** Calculating exactly how the price behaved 1, 3, and 7 days prior to predict the immediate forward trajectory.
+
 ## 🚀 Getting Started
 
 ### 1. Model Aggregation (Data Injection)
